@@ -10970,3 +10970,57 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+/* --- KİŞİSELLEŞTİRİLMİŞ AYARLAR --- */
+
+:root {
+  /* Renk Paleti: Bordo ve Koyu Gri */
+  --bs-primary: #800020;      /* Asil bir Bordo (Burgundy) */
+  --bs-primary-rgb: 128, 0, 32;
+  --bs-secondary: #4a4a4a;    /* Koyu Gri */
+  --bs-link-color: #800020;   /* Linkler Bordo */
+  --bs-link-hover-color: #a31621; /* Linke gelince açılan bordo */
+  
+  /* Font Ayarları: Daha sevimli ve yuvarlak hatlı */
+  --bs-body-font-family: 'Nunito', sans-serif; /* Okuma metinleri için yumuşak font */
+  --heading-font-family: 'Quicksand', sans-serif; /* Başlıklar için modern ve tatlı font */
+}
+
+/* Gövde ve Metin Fontu */
+body {
+    font-family: var(--bs-body-font-family);
+    color: #333333; /* Simsiyah yerine çok koyu gri (gözü yormaz) */
+}
+
+/* Başlık Fontları (İsim, Konu Başlıkları) */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .subheading, #sideNav .navbar-brand {
+    font-family: var(--heading-font-family) !important;
+    text-transform: none !important; /* Başlıkların hepsini BÜYÜK HARF yapmayı engeller, daha samimi durur */
+    font-weight: 700;
+}
+
+/* Sol Taraftaki Menü (Bordo Arka Plan) */
+#sideNav {
+    background-color: var(--bs-primary) !important;
+}
+
+/* Buton ve İkon Renkleri */
+.social-icons .social-icon:hover {
+    background-color: var(--bs-primary);
+    transform: scale(1.1); /* Üzerine gelince hafif büyüme efekti */
+    transition: all 0.3s ease;
+}
+
+.text-primary {
+    color: var(--bs-primary) !important;
+}
+
+a {
+    color: var(--bs-primary);
+}
+
+/* Seçim Rengi (Metni seçtiğinde çıkan renk) */
+::selection {
+    background-color: var(--bs-primary);
+    color: #fff;
+}
