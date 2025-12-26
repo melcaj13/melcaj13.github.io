@@ -11185,7 +11185,7 @@ a {
 .card:hover {
     transform: translateY(-8px);
     box-shadow: 0 1rem 3rem rgba(128, 0, 32, 0.15) !important;
-    border-color: var(--bs-primary) !important;
+    border: 2px solid var(--bs-primary) !important; 
 }
 
 /* Butonları Bordo Yapma */
