@@ -11183,9 +11183,10 @@ a {
 }
 
 .card:hover {
-    transform: translateY(-8px);
-    /* 0.25 değeri gölgenin %25 görünür (hafif) olmasını sağlar */
-    box-shadow: 0 15px 30px rgba(128, 0, 32, 0.60) !important; 
+    transform: translateY(-8px); /* Yukarı hareket */
+    border: none !important; /* Kenarlığı tamamen kaldırır */
+    /* Gölgeyi 0.75 (%75) yaparak koyulaştırdık, daha vurgulu duracak */
+    box-shadow: 0 15px 30px rgba(128, 0, 32, 0.75) !important; 
 }
 
 /* Butonları Bordo Yapma */
@@ -11203,4 +11204,19 @@ a {
 .btn-primary {
     background-color: #800020 !important;
     border-color: #800020 !important;
+}
+.my-logo {
+    font-weight: 700; /* Kalın yazı */
+    font-size: 1.5rem;
+    color: #fff !important; /* Beyaz yazı */
+    background-color: var(--bs-primary); /* Bordo Arka Plan */
+    padding: 10px 15px; /* Kutu genişliği */
+    border-radius: 8px; /* Köşeleri hafif yuvarla */
+    border: 2px solid var(--bs-primary);
+    transition: all 0.3s ease;
+}
+
+.my-logo:hover {
+    background-color: transparent; /* Üzerine gelince içi boşalsın */
+    color: var(--bs-primary) !important; /* Yazı bordo olsun */
 }
