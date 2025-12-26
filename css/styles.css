@@ -11220,3 +11220,16 @@ a {
     background-color: transparent; /* Üzerine gelince içi boşalsın */
     color: var(--bs-primary) !important; /* Yazı bordo olsun */
 }
+/* Proje kartlarındaki görseller için ayar */
+.card-img-top {
+    width: 100%;       /* Genişlik kutuyu doldursun */
+    height: 200px;     /* Yükseklik sabit olsun (hepsi eşit dursun) */
+    object-fit: cover; /* Resmi sündürmeden, ortalayarak sığdırır */
+    object-position: center; /* Resmin ortasını gösterir */
+    border-bottom: 3px solid var(--bs-primary); /* Altına şık bir bordo çizgi */
+}
+
+/* Kartların boyunu eşitlemek için */
+.card {
+    height: 100%;
+}
