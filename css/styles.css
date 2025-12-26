@@ -11184,9 +11184,9 @@ a {
 
 .card:hover {
     transform: translateY(-8px);
-    border: none !important; /* Kenarlık yok */
-    /* Daha koyu ve geniş bir gölge */
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2) !important; 
+    border: 2px solid var(--bs-primary) !important;
+    /* 0.25 değeri gölgenin %25 görünür (hafif) olmasını sağlar */
+    box-shadow: 0 15px 30px rgba(128, 0, 32, 0.25) !important; 
 }
 
 /* Butonları Bordo Yapma */
